@@ -49,7 +49,43 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # WARNING для знающих циклы: БЕЗ циклов. Да, с переменными; да, неэффективно; да, копипаста.
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
-# TODO здесь ваш код
+table_code = goods['Стол']
+table_item = store[table_code][0]#+store[table_code][0]
+table_item1 = store[table_code][1]
+table_quantity = table_item['quantity']
+table_quantity1 = table_item1['quantity']
+table_price = table_item['price']
+table_price1 = table_item1['price']
+table_quantity2=table_quantity+table_quantity1
+table_cost = (table_quantity * table_price) + (table_quantity1 * table_price1)
+print('Стол -', table_quantity2, 'шт, стоимость', table_cost, 'руб')
+
+
+divan_code = goods['Диван']
+divan_item = store[divan_code][0]#+store[table_code][0]
+divan_item1 = store[divan_code][1]
+divan_quantity = divan_item['quantity']
+divan_quantity1 = divan_item1['quantity']
+divan_price = divan_item['price']
+divan_price1 = divan_item1['price']
+divan_quantity2=divan_quantity+divan_quantity1
+divan_cost = (divan_quantity * divan_price) + (divan_quantity1 * divan_price1)
+print('Диван -', divan_quantity2, 'шт, стоимость', divan_cost, 'руб')
+
+
+stul_code = goods['Стул']
+stul_item = store[stul_code][0]#+store[table_code][0]
+stul_item1 = store[stul_code][1]
+stul_item2 = store[stul_code][2]
+stul_quantity = stul_item['quantity']
+stul_quantity1 = stul_item1['quantity']
+stul_quantity2 = stul_item2['quantity']
+stul_price = stul_item['price']
+stul_price1 = stul_item1['price']
+stul_price2 = stul_item2['price']
+stul_quantity3=stul_quantity+stul_quantity1+stul_quantity2
+stul_cost = (stul_quantity * stul_price) + (stul_quantity1 * stul_price1) + (stul_quantity2 * stul_price2)
+print('Стул -', stul_quantity2, 'шт, стоимость', stul_cost, 'руб')
 
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
