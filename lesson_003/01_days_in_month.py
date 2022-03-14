@@ -7,8 +7,18 @@
 # Если номер месяца некорректен - сообщить об этом
 
 # Номер месяца получать от пользователя следующим образом
+
 user_input = input("Введите, пожалуйста, номер месяца: ")
 month = int(user_input)
 print('Вы ввели', month)
-
-# TODO здесь ваш код
+if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+    month = 31
+    print('Количество дней в месяце равно', month)
+elif month == 4 or month == 6 or month == 9 or month == 11:
+    month = 30
+    print('Количество дней в месяце равно', month)
+elif month == 2:
+    month = 28
+    print('Количество дней в месяце равно', month)
+else:
+    print('Ошибка, такого месяца не существует')
